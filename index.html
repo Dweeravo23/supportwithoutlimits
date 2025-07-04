@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Without Limits | NDIS Disability Services</title>
+    <link rel="canonical" href="https://www.supportwithoutlimits.com.au" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#1e40af',
+                        accent: '#10b981',
+                        dark: '#1f2937',
+                        light: '#f9fafb'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+.ndis-logo {
+    height: 40px;
+    margin-left: 15px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+.ndis-logo:hover {
+    transform: scale(1.1);
+}
+        /* Custom CSS for elements that need more specific styling */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #3b82f6;
+            transition: width .3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        /* Accessibility focus styles */
+        *:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-white focus:px-4 focus:py-2 focus:rounded focus:z-50">Skip to content</a>
+    
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-primary p-2 rounded-lg mr-3">
+                    <i class="fas fa-hands-helping text-white text-2xl"></i>
+                </div>
+                <a href="#" class="text-2xl font-bold text-dark">
+                    <span class="text-primary">Support</span> Without Limits
+                </a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-dark focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-dark font-medium hover:text-primary transition">Home</a>
+                <a href="#services" class="nav-link text-dark font-medium hover:text-primary transition">Services</a>
+                <a href="#about" class="nav-link text-dark font-medium hover:text-primary transition">About Us</a>
+                <a href="#ndis" class="nav-link text-dark font-medium hover:text-primary transition">NDIS</a>
+                <a href="#contact" class="nav-link text-dark font-medium hover:text-primary transition">Contact</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-dark font-medium hover:text-primary transition">Home</a>
+            <a href="#services" class="block py-2 text-dark font-medium hover:text-primary transition">Services</a>
+            <a href="#about" class="block py-2 text-dark font-medium hover:text-primary transition">About Us</a>
+            <a href="#ndis" class="block py-2 text-dark font-medium hover:text-primary transition">NDIS</a>
+            <a href="#contact" class="block py-2 text-dark font-medium hover:text-primary transition">Contact</a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg text-white py-20 md:py-32">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Empowering Your Independence</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Providing compassionate, person-centered disability support services under the NDIS framework to help you live life without limits.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#contact" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Get Started</a>
+                    <a href="#services" class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded-lg transition duration-300 transform hover:scale-105">Our Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Our Support Services</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Tailored disability support services designed to meet your unique needs and goals under the NDIS.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <div class="bg-primary p-6 text-white">
+                            <i class="fas fa-home text-4xl mb-4"></i>
+                            <h3 class="text-xl font-bold">Supported Independent Living</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-700 mb-4">We provide accommodation support to help you live as independently as possible in your own home or shared living arrangement.</p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>24/7 support available</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Skill development programs</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Community participation</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <div class="bg-secondary p-6 text-white">
+                            <i class="fas fa-user-nurse text-4xl mb-4"></i>
+                            <h3 class="text-xl font-bold">Community Participation</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-700 mb-4">We support you to engage with your community, develop social connections, and participate in activities you enjoy.</p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Social and recreational activities</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Volunteering opportunities</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Skill-building workshops</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Card 3 -->
+                    <div class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <div class="bg-accent p-6 text-white">
+                            <i class="fas fa-hands-helping text-4xl mb-4"></i>
+                            <h3 class="text-xl font-bold">Therapeutic Supports</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-700 mb-4">Our qualified therapists provide evidence-based interventions to help you achieve your health and wellbeing goals.</p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary mr-2 mt-1"></i>
+                                    <span>Occupational therapy</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary mr-2 mt-1"></i>
+                                    <span>Physiotherapy</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary mr-2 mt-1"></i>
+                                    <span>Speech pathology</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Card 4 -->
+                    <div class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <div class="bg-primary p-6 text-white">
+                            <i class="fas fa-briefcase text-4xl mb-4"></i>
+                            <h3 class="text-xl font-bold">Employment Support</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-700 mb-4">We help you develop skills and find meaningful employment opportunities that match your interests and abilities.</p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Job readiness training</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Resume building</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Workplace support</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Card 5 -->
+                    <div class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <div class="bg-secondary p-6 text-white">
+                            <i class="fas fa-car text-4xl mb-4"></i>
+                            <h3 class="text-xl font-bold">Transport Services</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-700 mb-4">Safe and reliable transport to help you attend appointments, work, education, and social activities.</p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Door-to-door service</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Wheelchair accessible vehicles</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-accent mr-2 mt-1"></i>
+                                    <span>Flexible scheduling</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Service Card 6 -->
+                    <div class="service-card bg-light rounded-lg overflow-hidden shadow-md transition duration-300">
+                        <div class="bg-accent p-6 text-white">
+                            <i class="fas fa-calendar-alt text-4xl mb-4"></i>
+                            <h3 class="text-xl font-bold">Plan Management</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-700 mb-4">We can help manage your NDIS plan, including budgeting, paying providers, and keeping track of your funds.</p>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary mr-2 mt-1"></i>
+                                    <span>Financial reporting</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary mr-2 mt-1"></i>
+                                    <span>Provider coordination</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary mr-2 mt-1"></i>
+                                    <span>Claim processing</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <!-- About Us Section -->
+<section id="about" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                     alt="Support worker assisting participant with mobility in community setting" 
+                     class="rounded-lg shadow-xl w-full h-auto object-cover">
+            </div>
+            <div class="lg:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">About Support Without Limits</h2>
+                <p class="text-lg text-gray-600 mb-6">Founded in 2025, Support Without Limits is in the process of becoming a registered NDIS provider committed to delivering high-quality, person-centered support services to people with disability across Australia.</p>
+                
+                <!-- Rest of the About Us content remains the same -->
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-start">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i class="fas fa-heart text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-dark mb-2">Our Mission</h3>
+                            <p class="text-gray-600">To empower individuals with disability to live fulfilling, independent lives through tailored support services that respect their choices and dignity.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-secondary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i class="fas fa-eye text-secondary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-dark mb-2">Our Vision</h3>
+                            <p class="text-gray-600">A society where people with disability have equal opportunities to participate in all aspects of community life.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="bg-accent bg-opacity-10 p-3 rounded-full mr-4">
+                            <i class="fas fa-star text-accent text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-dark mb-2">Our Values</h3>
+                            <p class="text-gray-600">Respect, Inclusion, Integrity, Empowerment, and Excellence guide everything we do.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="inline-block bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-lg transition duration-300">Meet Our Team</a>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- In your NDIS section -->
+<div class="text-center mb-12">
+    <div class="flex justify-center items-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Working With the NDIS</h2>
+        <img src="https://www.ndis.gov.au/sites/default/files/ndis-logo-2.svg" 
+             alt="NDIS Logo" 
+             class="ndis-logo ml-4">
+          <section id="ndis" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                                        <p class="text-lg text-gray-600 max-w-3xl mx-auto">We're in the process of becoming a registered NDIS provider, which means we meet strict government quality and safety standards for disability services.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-primary bg-opacity-10 p-8 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-question-circle text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark">What is the NDIS?</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">The National Disability Insurance Scheme (NDIS) is Australia's national scheme for funding reasonable and necessary supports for people with permanent and significant disability.</p>
+                        <p class="text-gray-700">The NDIS takes a lifetime approach, investing in people with disability early to improve their outcomes later in life.</p>
+                    </div>
+                    
+                    <div class="bg-secondary bg-opacity-10 p-8 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-secondary text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-hand-holding-heart text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-dark">How We Can Help</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4">Our team can assist you with understanding and accessing the NDIS, from preparing for your planning meeting to implementing your approved plan.</p>
+                        <p class="text-gray-700">We work with you to ensure your supports align with your goals and NDIS funding.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-dark mb-6 text-center">NDIS Frequently Asked Questions</h3>
+                    
+                    <div class="max-w-3xl mx-auto space-y-4">
+                        <!-- FAQ Item 1 -->
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <button class="accordion-btn w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+                                <span class="text-lg font-medium text-dark text-left">How do I become an NDIS participant?</span>
+                                <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                            </button>
+                            <div class="accordion-content bg-gray-50">
+                                <div class="p-4 text-gray-700">
+                                    <p>To become an NDIS participant, you must:</p>
+                                    <ol class="list-decimal pl-5 mt-2 space-y-1">
+                                        <li>Meet the age requirements (under 65 when you first apply)</li>
+                                        <li>Be an Australian citizen, permanent resident, or Protected Special Category Visa holder</li>
+                                        <li>Have a permanent and significant disability that affects your ability to take part in everyday activities</li>
+                                        <li>Complete an access request form and provide evidence of your disability</li>
+                                    </ol>
+                                    <p class="mt-2">Our team can help guide you through the application process.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 2 -->
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <button class="accordion-btn w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+                                <span class="text-lg font-medium text-dark text-left">What types of supports does the NDIS fund?</span>
+                                <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                            </button>
+                            <div class="accordion-content bg-gray-50">
+                                <div class="p-4 text-gray-700">
+                                    <p>The NDIS funds reasonable and necessary supports that help you:</p>
+                                    <ul class="list-disc pl-5 mt-2 space-y-1">
+                                        <li>Achieve your goals</li>
+                                        <li>Increase your independence</li>
+                                        <li>Participate in the community and employment</li>
+                                        <li>Develop skills for daily living</li>
+                                    </ul>
+                                    <p class="mt-2">This can include therapies, equipment, home modifications, personal care, community participation, and more. The NDIS doesn't fund supports that are the responsibility of other government systems (like health or education).</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 3 -->
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <button class="accordion-btn w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+                                <span class="text-lg font-medium text-dark text-left">Can I choose my service providers?</span>
+                                <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                            </button>
+                            <div class="accordion-content bg-gray-50">
+                                <div class="p-4 text-gray-700">
+                                    <p>Yes! One of the key principles of the NDIS is choice and control. You have the right to:</p>
+                                    <ul class="list-disc pl-5 mt-2 space-y-1">
+                                        <li>Choose who provides your supports</li>
+                                        <li>Change providers if you're not happy with the service</li>
+                                        <li>Manage your own funding if you choose to</li>
+                                    </ul>
+                                    <p class="mt-2">We welcome the opportunity to work with you and will respect your choices at all times.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 4 -->
+                        <div class="border border-gray-200 rounded-lg overflow-hidden">
+                            <button class="accordion-btn w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 focus:outline-none">
+                                <span class="text-lg font-medium text-dark text-left">What's the difference between plan-managed, self-managed and NDIA-managed funding?</span>
+                                <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                            </button>
+                            <div class="accordion-content bg-gray-50">
+                                <div class="p-4 text-gray-700">
+                                    <p>There are three ways to manage your NDIS funding:</p>
+                                    <ol class="list-decimal pl-5 mt-2 space-y-2">
+                                        <li>
+                                            <strong>NDIA-managed:</strong> The NDIA pays providers directly. You can only use registered NDIS providers.
+                                        </li>
+                                        <li>
+                                            <strong>Plan-managed:</strong> A plan manager pays your providers for you, helps with budgeting, and keeps track of your funds. You can use both registered and non-registered providers.
+                                        </li>
+                                        <li>
+                                            <strong>Self-managed:</strong> You manage the funds yourself, pay providers, and keep records. You can use both registered and non-registered providers.
+                                        </li>
+                                    </ol>
+                                    <p class="mt-2">We can support you with any of these options and help you decide what works best for you.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-16 bg-primary text-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">What Our Participants Say</h2>
+                    <p class="text-lg max-w-2xl mx-auto">Hear from people who have experienced our services firsthand.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah J." class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-bold">Sarah J.</h4>
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="italic">"The team at Support Without Limits has completely changed my life. Their support workers treat me with such respect and help me achieve my goals every day."</p>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-bold">Michael T.</h4>
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="italic">"I was nervous about navigating the NDIS, but Support Without Limits made everything so clear. They advocated for me and helped me get the supports I really needed."</p>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm">
+                        <div class="flex items-center mb-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priya K." class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h4 class="font-bold">Priya K.</h4>
+                                <div class="flex text-yellow-300">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="italic">"The occupational therapy services have helped my son develop skills we never thought possible. The therapists are so patient and creative in their approach."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Get In Touch</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Ready to learn more about our services or have questions about how we can support you? Contact us today.</p>
+                </div>
+                
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-1/2">
+                        <form action="https://www.supportwithoutlimits.com.au/contact" method="POST" class="bg-white p-8 rounded-lg shadow-md">
+                            <div class="mb-6">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" required>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested In</label>
+                                <select id="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select a service</option>
+                                    <option value="sil">Supported Independent Living</option>
+                                    <option value="community">Community Participation</option>
+                                    <option value="therapy">Therapeutic Supports</option>
+                                    <option value="employment">Employment Support</option>
+      ic
+                              <option value="transport">Transport Services</option>
+                                    <option value="plan">Plan Management</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-bold py-3 px-4 rounded-lg transition duration-300">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="lg:w-1/2">
+                        <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                            <h3 class="text-2xl font-bold text-dark mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                        <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-dark mb-1">Our Office</h4>
+                                        <p class="text-gray-600">Support Without Limits<br>Raby NSW 2566</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-secondary bg-opacity-10 p-3 rounded-full mr-4">
+                                        <i class="fas fa-phone-alt text-secondary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-dark mb-1">Call Us</h4>
+                                        <p class="text-gray-600">Main: 0420 774 752<br>Support: 0450 257 748</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-accent bg-opacity-10 p-3 rounded-full mr-4">
+                                        <i class="fas fa-envelope text-accent text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-dark mb-1">Email Us</h4>
+                                        <p class="text-gray-600">info@supportwithoutlimits.com.au<br>david@supportwithoutlimits.com.au</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                        <i class="fas fa-clock text-primary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-dark mb-1">Office Hours</h4>
+                                        <p class="text-gray-600">Monday - Friday: 9am - 5pm<br>Weekends: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h4 class="text-lg font-semibold text-dark mb-4">Follow Us</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white w-10 h-10 rounded-full flex items-center justify-center text-gray-600 transition duration-300">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white w-10 h-10 rounded-full flex items-center justify-center text-gray-600 transition duration-300">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white w-10 h-10 rounded-full flex items-center justify-center text-gray-600 transition duration-300">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white w-10 h-10 rounded-full flex items-center justify-center text-gray-600 transition duration-300">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-
